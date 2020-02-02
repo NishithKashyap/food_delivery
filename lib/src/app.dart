@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:food_delivery/src/models/food_model.dart';
+//import 'package:food_delivery/src/models/food_model.dart';
 import 'package:food_delivery/src/scoped_models/food_model.dart';
 import 'package:scoped_model/scoped_model.dart';
 import 'screens/main_screen.dart';
