@@ -8,6 +8,7 @@ class ProfilePage extends StatefulWidget{
 class _ProfilePageState extends State<ProfilePage>{
 
   Icon _searchIcon = new Icon(Icons.search);
+  String _searchText = "";
 
   Widget _buildBar(BuildContext context){
     return new AppBar(
@@ -17,7 +18,7 @@ class _ProfilePageState extends State<ProfilePage>{
       actions: <Widget>[
         new IconButton(
         icon: _searchIcon,
-        onPressed: () {}
+        onPressed: _searchPressed,
       )
       ], 
     );
@@ -34,4 +35,16 @@ class _ProfilePageState extends State<ProfilePage>{
       body: _buildList(context),
     );
   }
+
+  void _searchPressed(){
+    setState(() {
+      if(this._searchIcon.icon == Icons.search){
+        this._searchIcon = new Icon(Icons.close);
+      }
+      else{
+        this._searchIcon = new Icon(Icons.search);
+      }
+    });
+  }
+
 }
