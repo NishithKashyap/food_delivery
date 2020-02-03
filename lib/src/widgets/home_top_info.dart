@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class HomeTopInfo extends StatelessWidget{
 
-  final textStyle = TextStyle(fontSize: 32.0, fontWeight: FontWeight.bold);
+  final textStyle = TextStyle(fontSize: 32.0,color: Color.fromRGBO(0, 102, 102, 10));
   
   @override
   Widget build(BuildContext context){
@@ -15,11 +15,10 @@ class HomeTopInfo extends StatelessWidget{
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
-              Text("What would", style: textStyle),
-              Text("you like to eat?", style: textStyle,)
+              Text("Kirana", style: textStyle),
             ],
           ),
-          Icon(Icons.notifications_none, size: 30.0, color: Theme.of(context).primaryColor,),
+          
         ],
       ),
     );

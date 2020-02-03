@@ -60,25 +60,25 @@ class _MainScreenState extends State<MainScreen> {
             icon: Icon(
               Icons.home,
             ),
-            title: Text("Home"),
+            title: Text(""),
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.shopping_basket,
+            ),
+            title: Text(""),
           ),
           BottomNavigationBarItem(
             icon: Icon(
               Icons.shopping_cart,
             ),
-            title: Text("Orders"),
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(
-              Icons.favorite,
-            ),
-            title: Text("Favorite"),
+            title: Text(""),
           ),
           BottomNavigationBarItem(
             icon: Icon(
               Icons.person,
             ),
-            title: Text("Profile"),
+            title: Text(""),
           ),
         ],
       ),

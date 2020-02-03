@@ -48,12 +48,12 @@ class _SignInPageState extends State<SignInPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Padding(
-        padding: EdgeInsets.symmetric(horizontal: 10.0),
+        padding: EdgeInsets.symmetric(horizontal: 30.0),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
-              "Sign In",
+              "Login",
               style: TextStyle(
                 fontSize: 40.0,
                 fontWeight: FontWeight.bold,
@@ -61,19 +61,6 @@ class _SignInPageState extends State<SignInPage> {
             ),
             SizedBox(
               height: 100.0,
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.end,
-              children: <Widget>[
-                Text(
-                  "Forgotten Password?",
-                  style: TextStyle(
-                    fontSize: 18.0,
-                    color: Colors.blueAccent,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-              ],
             ),
             SizedBox(
               height: 10.0,
@@ -96,51 +83,63 @@ class _SignInPageState extends State<SignInPage> {
             SizedBox(
               height: 30.0,
             ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: <Widget>[
+                Text(
+                  "Forgot your password?",
+                  style: TextStyle(
+                    fontSize: 18.0,
+                    color: Colors.black,
+                    fontWeight: FontWeight.normal,
+                  ),
+                ),
+              ],
+            ),
+            SizedBox(height: 20,),
             Container(
               height: 50.0,
               decoration: BoxDecoration(
-                  color: Colors.blue,
+                  color: Color.fromRGBO(100, 255, 155, 15),
                   borderRadius: BorderRadius.circular(25.0)),
               child: Center(
                 child: Text(
-                  "Sign In",
+                  "Login",
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 18.0,
-                    fontWeight: FontWeight.bold,
+                    fontWeight: FontWeight.normal,
                   ),
                 ),
               ),
             ),
-            Divider(
-              height: 20.0,
-            ),
+            
+            
+            SizedBox(height: 150,),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 Text(
-                  "Don't have an account?",
+                  "Or login with social account",
                   style: TextStyle(
                       color: Color(0xFFBDC2CB),
                       fontWeight: FontWeight.bold,
                       fontSize: 18.0),
                 ),
                 SizedBox(width: 10.0),
-                GestureDetector(
-                  onTap: () {
-                    Navigator.of(context).pushReplacement(MaterialPageRoute(
-                        builder: (BuildContext context) => SignUpPage()));
-                  },
-                  child: Text(
-                    "Sign up",
-                    style: TextStyle(
-                        color: Colors.blueAccent,
-                        fontWeight: FontWeight.bold,
-                        fontSize: 18.0),
-                  ),
-                ),
               ],
             ),
+            SizedBox(height: 20,),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                Image(
+                  image: AssetImage("assets/images/google.jpg"),
+                  height: 65.0,
+                  width: 65.0,
+                ),
+              ],
+            )
           ],
         ),
       ),

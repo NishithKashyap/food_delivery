@@ -27,6 +27,7 @@ dependencies:
   scoped_model: ^1.0.1
 
 dev_dependencies:
+  polygon_clipper: ^1.0.2
   flutter_test:
     sdk: flutter
 
@@ -46,6 +47,7 @@ flutter:
     - assets/images/breakfast.jpeg
     - assets/images/burger.png
     - assets/images/cheeseburger.png
+    - assets/images/google.jpg
     - assets/images/coffee-cup.png
     - assets/images/cupcake.png
     - assets/images/lunch.jpeg
