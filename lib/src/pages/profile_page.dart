@@ -30,9 +30,16 @@ class _ProfilePageState extends State<ProfilePage>{
 
   @override
   Widget build(BuildContext context){
+<<<<<<< HEAD
     return Scaffold(
       appBar: _buildBar(context),
       body: _buildList(context),
+=======
+    return Center(
+      child: Text(
+        "MY PROFILE"
+      ),
+>>>>>>> 339d77b0ff31f40e61a19bc30fb1a7c7120470ff
     );
   }
 

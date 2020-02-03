@@ -8,7 +8,7 @@ class App extends StatelessWidget {
   final FoodModel foodModel = FoodModel();
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context){ 
     return ScopedModel<FoodModel>(
       model: foodModel,
       child: MaterialApp(

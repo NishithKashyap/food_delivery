@@ -1,19 +1,15 @@
 class Food{
-  final String id;
   final String name;
   final String imagePath;
-  final String category;
-  final double price;
-  final double discount;
+  final String address;
+  final double distance;
   final double ratings;
 
   Food({
-    this.id,
     this.name,
     this.imagePath,
-    this.category,
-    this.price,
-    this.discount,
+    this.address,
+    this.distance,
     this.ratings
   });
 }
